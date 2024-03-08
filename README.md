@@ -14,7 +14,7 @@ Mostly this endpoints used `form-data` to make POST request
   | `image` | file of image |
 
   Response :
-  Upon success this will return resized image as `bytes`
+  Upon success this will return resized image as `bytes` <br />
   If error there will return a message
 
 - `/compress`
@@ -23,7 +23,7 @@ Mostly this endpoints used `form-data` to make POST request
   | `image` | file of image |
 
   Response :
-  Upon success this will return compressed image as `bytes`
+  Upon success this will return compressed image as `bytes` <br />
   If error there will return a message
 
 - `/convert`
@@ -32,15 +32,15 @@ Mostly this endpoints used `form-data` to make POST request
   | `image` | file of image |
 
   Response :
-  Upon success this will return compressed image as `bytes`
+  Upon success this will return compressed image as `bytes` <br />
   If error there will return a message
 
 ### How to run test
 
-- Run `mvn clean verify`
+- Run `mvn clean install` this will clean and install required dependecies
+- Run `mvn clean verify` to test all 
 - Wait few minutes
-- Go to project folder `target\site\jacoco\`
-- Open `index.html` via browser
+- In root project, open file `target\site\jacoco\index.html` via browser
 
 ### How to run
 
